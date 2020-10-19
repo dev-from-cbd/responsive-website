@@ -16,3 +16,45 @@
   --gradient-color: linear-gradient(to right, var(--yellow-solid), var(--purple-light));
   --gradient-color-alt: linear-gradient(to right, var(--purple-light), var(--yellow-solid));
 }
+
+html{
+  font-size: 10px;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  color: var(--dark-color);
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+ul{
+  list-style: none;
+}
+
+section{
+  padding: 5rem 0;
+}
+
+.container{
+  width: 100%;
+  max-width: 120rem;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+
+.header{
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--purple-transparent);
+  z-index: 999;
+}
