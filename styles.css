@@ -124,3 +124,31 @@ section{
   letter-spacing: 2px;
   padding: 1rem;
 }
+
+.hero{
+  width: 100%;
+  height: 100vh;
+  background: url("images/first-background-1920x1080.jpg") center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+}
+
+.hero::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  background-color: var(--purple-transparent-alt);
+  z-index: -1;
+}
+
+.main-heading{
+  color: #fff;
+}
