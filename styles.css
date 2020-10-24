@@ -152,4 +152,11 @@ section{
 .main-heading{
   color: #fff;
   line-height: 1;
+  text-shadow: 1px 1px 1rem rgba(0,0,0,.5);
+  margin-bottom: 2.5rem;
+}
+
+.title{
+  font-size: 4.8rem;
+  text-transform: uppercase;
 }
