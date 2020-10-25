@@ -161,3 +161,7 @@ section{
   text-transform: uppercase;
   letter-spacing: 3px;
 }
+
+.subtitle{
+  font-size: 3.6rem;
+}
