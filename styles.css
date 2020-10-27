@@ -164,4 +164,6 @@ section{
 
 .subtitle{
   font-size: 3.6rem;
+  font-weight: 300;
+  font-family: 'Courgette', cursive;
 }
