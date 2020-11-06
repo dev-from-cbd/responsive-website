@@ -210,3 +210,7 @@ section{
   margin-left: .5rem;
   opacity: .75;
 }
+
+.booking{
+  background-image: var(--gradient-color);
+}
