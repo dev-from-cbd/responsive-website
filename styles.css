@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
   --dark-color: #2d2c2c;
   --purple-solid: #350a4f;
@@ -64,27 +65,52 @@ section{
   cursor: pointer;
 }
 
-.header{
+.btn-gradient {
+  background-image: var(--gradient-color);
+}
+
+.btn-gradient:hover {
+  background-image: var(--gradient-color-alt);
+}
+
+.btn-purple {
+  background-color: var(--purple-solid);
+  transition: background-color .5s;
+}
+
+.btn-purple:hover {
+  background-color: #56247f;
+}
+
+.dots {
+  font-size: 2.4rem;
+  margin-left: .5rem;
+  opacity: .75;
+}
+
+.header {
   width: 100%;
   height: 6rem;
   display: flex;
   align-items: center;
-  position: fixed;
   top: 0;
   left: 0;
+  position: fixed;
   background-color: var(--purple-transparent);
   z-index: 999;
+  /*
   transition: background-color .5s, height .5s;
+  */
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header.active {
   background-color: var(--purple-solid);
-}
-
-.nav{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .logo img{
@@ -133,7 +159,7 @@ section{
   transform: scale(1);
 }
 
-.nav-item:not(:last-child){
+.nav-item:not(:last-child) {
   margin-bottom: .5rem;
 }
 
@@ -160,6 +186,7 @@ section{
   z-index: 0;
 }
 
+/*
 .hero::before{
   content: '';
   position: absolute;
@@ -170,50 +197,42 @@ section{
   background-color: var(--purple-transparent-alt);
   z-index: -1;
 }
+*/
 
-.main-heading{
+.hero::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  background-color: var(--purple-transparent-alt);
+  z-index: -1;
+}
+
+.main-heading {
   color: #fff;
   line-height: 1;
-  text-shadow: 1px 1px 1rem rgba(0,0,0,.5);
+  text-shadow: 1px 1px 1rem rgba(0, 0, 0, .5);
   margin-bottom: 2.5rem;
 }
 
-.title{
+.title {
   font-size: 4.8rem;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
 
+.sub-title{
+  font-size: 3.6rem;
+  font-family: 'Courgette', cursive;
+  font-weight: 300;
+}
+
 .subtitle{
   font-size: 3.6rem;
-  font-weight: 300;
   font-family: 'Courgette', cursive;
-}
-
-.btn{
-  color: #fff;
-  font-size: 1.3rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: .5rem 3.5rem;
-  border: none;
-  border-radius: 10rem;
-  display: inline-flex;
-  align-items: center;
-}
-
-.btn-gradient{
-  background-image: var(--gradient-color);
-}
-
-.btn-gradient:hover{
-  background-image: var(--gradient-color-alt);
-}
-
-.dots{
-  font-size: 2.4rem;
-  margin-left: .5rem;
-  opacity: .75;
+  font-weight: 300;
 }
 
 .booking{
@@ -224,33 +243,105 @@ section{
   margin-bottom: 1.5rem;
 }
 
-.input-label{
+.input-label {
   display: block;
   font-size: 1.3rem;
-  text-transform: uppercase;
   color: #fff;
+  text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
 .input,
-.options{
+.options {
   outline: none;
   border: none;
   width: 100%;
   min-height: 4rem;
   padding: 1rem;
   font-weight: bold;
-  color: #e5a5a5;
+  color: #a5a5a5;
   letter-spacing: 2px;
-  font-family: "Open Sans", sans-serif;
-  /* resize: none; */
+  font-family: 'Open Sans', sans-serif;
+  resize: none;
 }
 
-.btn-purple{
-  background-color: var(--purple-solid);
+::placeholder {
+  color: inherit;
 }
 
-.btn-purple:hover{
-  background-color: #56247f;
+.section-head {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.heading {
+  display: block;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.sub-heading {
+  font-size: 1.7rem;
+  font-family: 'Courgette', cursive;
+  font-weight: 300;
+  color: #a5a5a5;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
+  grid-gap: 2.5rem;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured-hotels {
+  height: 35rem;
+  color: #fff;
+  padding: 1rem;
+  position: relative;
+  z-index: 0;
+}
+
+.featured-hotels::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--purple-transparent-alt);
+  z-index: -1;
+}
+
+.hotel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.hotel-name {
+  font-size: 2.6rem;
+}
+
+.hotel-price {
+  font-size: 1.8rem;
+}
+
+.hotel-rating {
+  margin: 1rem 0 2.5rem;
+}
+
+.rating {
+  margin: 1rem 0 2.5rem;
 }
