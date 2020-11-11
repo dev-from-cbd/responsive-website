@@ -46,23 +46,25 @@
         <div class="container">
           <div class="main-heading">
             <h1 class="title">Discover</h1>
-            <h2 class="subtitle">Front End</h2>
+            <h2 class="sub-title">Front End</h2>
+            <!-- <h2 class="subtitle">Front End</h2> --->
           </div>
           <a href="#" class="btn btn-gradient">Explore now
             <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
           </a>
         </div>
       </div>
+
       <section class="booking">
         <div class="container">
-          <form action="" class="form">
+          <form action="" class="form book-form">
             <div class="input-group">
-              <label for="detination" class="input-label">The Course</label>
-              <input type="text" class="input" id="destignation">
+              <label for="destination" class="input-label">The Course</label>
+              <input type="text" class="input" id="destination" placeholder="Course">
             </div>
             <div class="input-group">
               <label for="check-in" class="input-label">The Start of the Course</label>
-              <input type="text" class="input" id="check-in">
+              <input type="date" class="input" id="check-in">
             </div>
             <div class="input-group">
               <label for="check-out" class="input-label">The End of the Course</label>
@@ -90,12 +92,13 @@
                 <option value="0">5</option>
               </select>
             </div>
-            <button class="btn form-btn btn-purple">Search
+            <button type="submit" class="btn form-btn btn-purple">Search
               <span class=dots"><i class="fas fa-ellipsis-h"></i></span>
             </button>
           </form>
         </div>
       </section>
+
       <section class="hotels">
         <div class="container">
           <h5 class="section-head">
@@ -103,9 +106,8 @@
             <span class="sub-heading">IT Courses</span>
           </h5>
           <div class="grid">
-
             <div class="grid-item featured-hotels">
-              <img src="images/courses.jpg" alt="IT courses" class="hotel-image">
+              <img class="hotel-image" src="images/courses.jpg" alt="IT courses">
               <h5 class="hotel-name">HTML5</h5>
               <span class="hotel-price">From $1/month</span>
               <div class="hotel-rating">
@@ -121,7 +123,7 @@
             </div>
 
             <div class="grid-item featured-hotels">
-              <img src="images/lady.jpg" alt="IT courses" class="hotel-image">
+              <img class="hotel-image" src="images/lady.jpg" alt="IT courses">
               <h5 class="hotel-name">CSS3</h5>
               <span class="hotel-price">From $1/month</span>
               <div class="hotel-rating">
@@ -151,10 +153,10 @@
                 <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
               </a>
             </div>
-
           </div>
         </div>
       </section>
+
       <section class="offer">
         <div class="container">
           <div class="offer-content">
@@ -175,6 +177,26 @@
             <a href="#" class="btn btn-gradient" title="redeem offer">Start now
               <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
             </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="rooms">
+        <div class="container">
+          <h5 class="section-head">
+            <span class="heading">The best course</span>
+            <span class="sub-heading">TOP courses</span>
+          </h5>
+          <div class="grid rooms-grid">
+            <div class="grid-item featured-rooms">
+              <div class="image-wrap">
+                <img class="room-image" src="images/thebest.jpg" alt="The best course">
+                <h5 class="room-name">Bootstrap 5</h5>
+              </div>
+              <div class="room-info-wrap">
+                <span class="room-price"><span class="per-night">from scratch</span></span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
