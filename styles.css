@@ -447,3 +447,7 @@ section{
 .rooms-btn:hover {
   color: var(-yellow-solid);
 }
+
+.contact-content {
+  display: flex;
+}
