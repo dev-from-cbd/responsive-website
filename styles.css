@@ -450,4 +450,5 @@ section{
 
 .contact-content {
   display: flex;
+  justify-content: center;
 }
