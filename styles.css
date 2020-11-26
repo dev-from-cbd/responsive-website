@@ -490,6 +490,10 @@ section{
   transition: transform .5s;
 }
 
-.contact-form .input:focus + .bar::after {
+.contact-form .input:focus+.bar::after {
   transform: scaleX(1);
+}
+
+.footer {
+  padding: 5rem 0;
 }
