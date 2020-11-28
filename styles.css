@@ -499,3 +499,7 @@ section{
   background-color: var(--purple-solid);
   color: #fff;
 }
+
+.footer-content-brand {
+  margin-bottom: 5rem;
+}
